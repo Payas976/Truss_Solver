@@ -1,4 +1,5 @@
 # Truss_Solver
-Use C++ and OpenCascade lib
+Use C++ Only
+Take all inputs using Terminal
 2d Truss input with boundary conditions
 solve for force through each member
