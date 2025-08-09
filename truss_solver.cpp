@@ -39,7 +39,7 @@ public:
     bool readFromJSON(const std::string& filename);
     void computeMemberLengths(); // Calculate and cache member lengths
     // void solve();                // Solve truss using direct stiffness method
-    // using Solver class to change solver class separately
+    // using Solver class to change solver separately
     void printResults() const;   // Output displacements, forces, reactions
 };
 
@@ -83,4 +83,5 @@ int main() {
     Solver a(truss);
     truss.printResults();
     return 0;
+
 }
