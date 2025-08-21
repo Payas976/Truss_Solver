@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <matrix/Matrix.h>
 
 struct Node {
     double x, y;            // Coordinates
@@ -43,16 +44,6 @@ public:
     void printResults() const;   // Output displacements, forces, reactions
 };
 
-class Matrix {
-private:
-    std::vector<std::vector<double>> data;
-    int rows, cols;
-public:
-    Matrix(int r, int c);
-    double& operator()(int i, int j);
-    Matrix operator*(const Matrix& other) const;
-    std::vector<double> solve(const std::vector<double>& b) const; // Gaussian elimination
-};
 
 class Solver {
 private:
